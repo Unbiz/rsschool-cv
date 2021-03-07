@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CV @Unbiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__container container">
+      <h1 class="page-header__title">Vladimir Bessonov</h1>
+      <img class="page-header__img" src="./img/foto.jpg" alt="Фото пользователя" width="200" height="200">
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="page-main__container container">
+      <section class="page-main__contacts contacts">
+        <h2 class="contacts__title">Contacts</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">Phone: +7 (926) 678-79-96</li>
+          <li class="contacts__item">E-mail: bessmy@gmail.com</li>
+          <li class="contacts__item">Telegram: @VladBes</li>
+          <li class="contacts__item">Discord: @Unbiz#4074</li>
+        </ul>
+      </section>
+      <section class="page-main__summary summary">
+        <h2 class="summary__title">Summary</h2>
+        <p class="summary__descr">
+          All my life I wonted to be a programmer. But I working in other profession. I’ve been studying Frontend Development for
+          the last half year. My goal is to start working as a developer this year.
+        </p>
+      </section>
+      <section class="page-main__skills skills">
+        <h2 class="skills__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">HTML (HTML5, PUG)</li>
+          <li class="skills__item">CSS (CSS3, SCSS, BEM)</li>
+          <li class="skills__item">JavaScript (ES6)</li>
+          <li class="skills__item">Git</li>
+          <li class="skills__item">NPM</li>
+          <li class="skills__item">Figma</li>
+          <li class="skills__item">Visual Studio Code</li>
+        </ul>
+      </section>
+      <section class="page-main__code-example code-example">
+        <h2 class="code-example__title">Code Example</h2>
+        <pre>
+          <code class="code-example__code">
+            function squareDigits(num) {
+              const sum = String(num)
+                .split('')
+                .map((item) => Number(item) ** 2)
+                .join('');
+              return Number(sum);
+            }
+
+            function findShort(s) {
+              const arrOfLengths = s.split(' ').map((word) => word.length);
+              return Math.min(...arrOfLengths);
+            }
+
+            function evenOrOdd(number) {
+              return number % 2 === 0 ? 'Even' : 'Odd';
+            }
+          </code>
+        </pre>
+      </section>
+      <section class="page-main__education education">
+        <h2 class="education__title">Education</h2>
+        <ul class="education__list">
+          <li class="education__item">Volgograd State Technical University (some courses)</li>
+          <li class="education__item"><a href="https://ru.hexlet.io/" class="education__item-link">Hexlet</a></li>
+        </ul>
+      </section>
+      <section class="page-main__languages languages">
+        <h2 class="languages__title">Languages</h2>
+        <ul class="languages__list">
+          <li class="languages__item">Russian (native speaker)</li>
+          <li class="languages__item">English (A2)</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="page-Footer">
+    <div class="page-Footer__container container">
+      <span class="page-Footer__copyright">&copy; Vladimir Bessonov</span>
+    </div>
+  </footer>
+</body>
+
+</html>
