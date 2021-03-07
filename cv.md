@@ -2,9 +2,10 @@
 ---
 
 ## Contacts
-* Phone: +7 (926) 678-79-96
-* E-mail: bessmy@gmail.com
-* Telegram: [@VladBes](https://t.me/VladBes)
+- Phone: +7 (926) 678-79-96
+- E-mail: bessmy@gmail.com
+- Telegram: [@VladBes](https://t.me/VladBes)
+- Discord: @Unbiz#4074
 
 ## Summary
 All my life I wonted to be a programmer. But I working in other profession.
