@@ -37,3 +37,11 @@ function evenOrOdd(number) {
   return number % 2 === 0 ? 'Even' : 'Odd';
 }
 ```
+
+### Education
+- Volgograd State Technical University (some courses)
+- [Hexlet](https://ru.hexlet.io)
+
+### Languages
+- Russian - native speaker
+- English (A2)
