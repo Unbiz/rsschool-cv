@@ -48,23 +48,26 @@
       </section>
       <section class="page-main__code-example code-example">
         <h2 class="code-example__title">Code Example</h2>
-        <code class="code-example__code">
-          function squareDigits(num) {
-          const sum = String(num).split('')
-          .map((item) => Number(item) ** 2)
-          .join('');
-          return Number(sum);
-          }
-          
-          function findShort(s) {
-          const arrOfLengths = s.split(' ').map((word) => word.length);
-          return Math.min(...arrOfLengths);
-          }
-          
-          function evenOrOdd(number) {
-          return number % 2 === 0 ? 'Even' : 'Odd';
-          }
-        </code>
+        <pre>
+          <code class="code-example__code">
+            function squareDigits(num) {
+              const sum = String(num)
+                .split('')
+                .map((item) => Number(item) ** 2)
+                .join('');
+              return Number(sum);
+            }
+
+            function findShort(s) {
+              const arrOfLengths = s.split(' ').map((word) => word.length);
+              return Math.min(...arrOfLengths);
+            }
+
+            function evenOrOdd(number) {
+              return number % 2 === 0 ? 'Even' : 'Odd';
+            }
+          </code>
+        </pre>
       </section>
       <section class="page-main__education education">
         <h2 class="education__title">Education</h2>
