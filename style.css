@@ -11,7 +11,7 @@ h2 {
   margin: 20px 20px;
   background-color: rgb(182, 182, 182);
   color: #222022;
-  min-width: 270px;
+  min-width: 286px;
 }
 
 .wrapper {
@@ -33,6 +33,8 @@ h2 {
   border-radius: 4px;
   background-color: rgb(236, 235, 230);
   box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in;
+  min-height: 100px;
 }
 
 .page-header__img {
@@ -273,7 +275,7 @@ h2 {
   outline-width: 0;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 790px) {
   .page-header__nav-button {
     display: block;
     width: 40px;
@@ -307,11 +309,24 @@ h2 {
   }
 
   .page-header__nav {
+    height: auto;
+    overflow: auto;
     position: absolute;
-    width: 80px;
-    height: 120px;
     top: 32px;
     right: 10px;
+    margin-right: 0;
+    transition: all 0.4s ease-in;
+  }
+
+  .page-header__nav--closed {
+    height: 0px;
+    overflow: hidden;
+  }
+
+  .nav__list {
+    padding: 0;
+    margin: 0 auto;
+    height: 190px;
     background-color: rgb(199, 194, 173);
     margin-left: 0;
     margin-right: 0;
@@ -321,19 +336,15 @@ h2 {
     transition: all 0.2s ease-in;
     box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
     z-index: 10;
+    opacity: 0;
   }
 
-  .page-header__nav--closed {
-    display: none;
-  }
-
-  .nav__list {
-    padding: 0;
-    margin: 0 auto;
+  .nav__list--active {
+    opacity: 1;
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 790px) {
   .page-header {
     align-items: flex-start;
     justify-content: left;
@@ -345,16 +356,24 @@ h2 {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 540px) {
+  .page-header--active {
+    min-height: 234px;
+  }
+
   .page-body {
     margin: 10px;
   }
   .page-header__img {
-    max-width: 100px;
+    max-width: 90px;
   }
 
   .page-header__title {
-    max-width: 130px;
-    font-size: 22px;
+    max-width: 110px;
+    font-size: 20px;
+  }
+
+  .nav__list {
+    transition: all 0.2s ease-in 0.2s;
   }
 }

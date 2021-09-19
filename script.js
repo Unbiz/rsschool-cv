@@ -2,6 +2,8 @@
 
 const navButton = document.querySelector('.page-header__nav-button');
 const menu = document.querySelector('.page-header__nav');
+const header = document.querySelector('.page-header');
+const navList = document.querySelector('.nav__list');
 
 let isOpenedMenu = false;
 
@@ -9,10 +11,14 @@ navButton.addEventListener("click", () => {
   if (isOpenedMenu) {
     navButton.classList.remove("page-header__nav-button--active");
     menu.classList.add("page-header__nav--closed");
+    header.classList.remove("page-header--active");
+    navList.classList.remove("nav__list--active");
     isOpenedMenu = false;
   } else {
     navButton.classList.add("page-header__nav-button--active");
     menu.classList.remove("page-header__nav--closed");
+    header.classList.add("page-header--active");
+    navList.classList.add("nav__list--active");
     isOpenedMenu = true;
   }
 });
