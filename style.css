@@ -6,7 +6,7 @@ html {
   margin: 20px 20px;
   background-color: rgb(182, 182, 182);
   color: #222022;
-  min-width: 320px;
+  min-width: 270px;
 }
 
 .wrapper {
@@ -21,6 +21,7 @@ html {
 .page-header {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
@@ -45,6 +46,10 @@ html {
 .page-header__nav {
   margin-left: auto;
   margin-right: 10px;
+}
+
+.page-header__nav-button {
+  display: none;
 }
 
 .nav__list {
@@ -175,4 +180,90 @@ html {
 
 .page-footer__rs-school:hover {
   opacity: 0.6;
+}
+
+@media (max-width: 760px) {
+  .page-header__nav-button {
+    display: block;
+    width: 40px;
+    height: 22px;
+    background-image: url(./img/menu.svg);
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s ease-in;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 3px;
+  }
+
+  .page-header__nav-button--active {
+    background-color: rgb(199, 194, 173);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .page-header__nav-button:hover {
+    transform: scale(1.1);
+    right: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  }
+
+  .page-header__nav-button:active {
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+  }
+
+  .page-header__nav {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    top: 32px;
+    right: 10px;
+    background-color: rgb(199, 194, 173);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .page-header__nav--closed {
+    display: none;
+  }
+
+  .nav__list {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-header {
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .page-header__title {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .page-body {
+    margin: 10px;
+  }
+  .page-header__img {
+    max-width: 100px;
+  }
+
+  .page-header__title {
+    max-width: 130px;
+    font-size: 22px;
+  }
 }
