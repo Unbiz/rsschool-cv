@@ -97,48 +97,58 @@ html {
   margin: 5px 0;
 }
 
-.code-example__code-wrapper {
+.code-example .code-example__code-wrapper {
   background-color: rgb(199, 199, 199);
   border-radius: 4px;
   box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
   max-width: 600px;
   overflow-x: auto;
-  padding: 10px;
+  padding: 0 10px;
+  margin: 0;
 }
 
-.code-example__code-wrapper::-webkit-scrollbar {
+.code-example .code-example__code {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.code-example .code-example__code::-webkit-scrollbar {
   width: 8px;
   height: 8px;
   border-radius: 4px;
 }
 
-.code-example__code-wrapper::-webkit-scrollbar-button {
+.code-example .code-example__code::-webkit-scrollbar-button {
   background-color: rgb(199, 199, 199);
   width: 8px;
   border-radius: 4px;
 }
 
-.code-example__code-wrapper::-webkit-scrollbar-track {
+.code-example .code-example__code::-webkit-scrollbar-track {
   background-color: #999;
 }
 
-.code-example__code-wrapper::-webkit-scrollbar-track-piece {
+.code-example .code-example__code::-webkit-scrollbar-track-piece {
   background-color: rgb(199, 199, 199);
 }
 
-.code-example__code-wrapper::-webkit-scrollbar-thumb {
+.code-example .code-example__code::-webkit-scrollbar-thumb {
   height: 50px;
   background-color: #666;
   border-radius: 4px;
 }
 
-.code-example__code-wrapper::-webkit-scrollbar-corner {
+.code-example .code-example__code::-webkit-scrollbar-corner {
   background-color: #999;
   border-radius: 4px;
 }
 
-.code-example__code-wrapper::-webkit-resizer {
+.code-example .code-example__code::-webkit-resizer {
   background-color: #666;
+}
+
+.code-example .code-example__code {
+  background-color: rgb(199, 199, 199);
 }
 
 .education__item {

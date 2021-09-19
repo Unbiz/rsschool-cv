@@ -8,6 +8,9 @@
   <title>CV @Unbiz</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body class="page-body">
@@ -61,7 +64,7 @@
       <section class="page-main__code-example code-example">
         <h2 class="code-example__title">Code Example</h2>
         <pre class="code-example__code-wrapper">
-              <code class="code-example__code">
+              <code class="code-example__code javascript">
 function squareDigits(num) {
   const sum = String(num)
     .split('')
