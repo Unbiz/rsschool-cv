@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .page-body {
   margin: 20px 20px;
   background-color: rgb(182, 182, 182);
@@ -43,7 +47,7 @@
   margin-right: 10px;
 }
 
-.nav__list  {
+.nav__list {
   list-style: none;
   text-align: right;
 }
@@ -77,7 +81,6 @@
 
 .contacts__item a:hover {
   opacity: 0.6;
-  
 }
 
 .summary__descr {
