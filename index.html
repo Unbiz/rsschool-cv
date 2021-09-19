@@ -7,6 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CV @Unbiz</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body class="page-body">
@@ -14,52 +18,57 @@
   <div class="wrapper">
 
     <header class="page-header">
-      <img class="page-header__img" src="./img/foto.jpg" alt="Фото пользователя" width="200" height="200">
+      <img class="page-header__img" src="./img/foto.jpg" alt="Users photo" width="200" height="200">
       <h1 class="page-header__title">Vladimir Bessonov</h1>
-      <nav class="page-header__nav nav">
+      <nav class="page-header__nav page-header__nav--closed nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
           <li class="nav__item"><a href="#summary" class="nav__link">Summary</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#code" class="nav__link">Code Example</a></li>
           <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#languages" class="nav__link">Languages</a></li>
+          <li class="nav__item"><a href="#introduction" class="nav__link">Self-introduction</a></li>
         </ul>
       </nav>
+      <button class="page-header__nav-button page-header__nav-button--active"></button>
     </header>
 
     <main class="page-main">
       <section class="page-main__contacts contacts" id="contacts">
-          <h2 class="contacts__title">Contacts</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">Phone: <a href="tel:+79266787996">+7 (926) 678-79-96</a></li>
-            <li class="contacts__item">E-mail: <a href="mailto:bessmy@gmail.com">bessmy@gmail.com</a></li>
-            <li class="contacts__item">Telegram: <a href="https://t.me/VladBes">@VladBes</a></li>
-            <li class="contacts__item">Discord: @Unbiz#4074</li>
-          </ul>
+        <h2 class="contacts__title">Contacts</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">Phone: <a href="tel:+79266787996">+7 (926) 678-79-96</a></li>
+          <li class="contacts__item">E-mail: <a href="mailto:bessmy@gmail.com">bessmy@gmail.com</a></li>
+          <li class="contacts__item">Telegram: <a href="https://t.me/VladBes">@VladBes</a></li>
+          <li class="contacts__item">Discord: @Unbiz#4074</li>
+        </ul>
       </section>
-      <section class="page-main__summary summary" id="summary">
-          <h2 class="summary__title">Summary</h2>
-          <p class="summary__descr">
-            All my life I wonted to be a programmer. But I working in other profession. I’ve been studying Frontend
-            Development for
-            the last half year. My goal is to start working as a developer this year.
-          </p>
-      </section>
+      <article class="page-main__summary summary" id="summary">
+        <h2 class="summary__title">Summary</h2>
+        <p class="summary__descr">
+          All my life I wonted to be a programmer. But I working in other profession. I’ve been studying Frontend
+          Development for
+          the last half year. My goal is to start working as a developer this year.
+        </p>
+      </article>
       <section class="page-main__skills skills" id="skills">
-          <h2 class="skills__title">Skills</h2>
-          <ul class="skills__list">
-            <li class="skills__item">HTML (HTML5, PUG)</li>
-            <li class="skills__item">CSS (CSS3, SCSS, BEM)</li>
-            <li class="skills__item">JavaScript (ES6)</li>
-            <li class="skills__item">Git</li>
-            <li class="skills__item">NPM</li>
-            <li class="skills__item">Figma</li>
-            <li class="skills__item">Visual Studio Code</li>
-          </ul>
+        <h2 class="skills__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">HTML (HTML5, PUG)</li>
+          <li class="skills__item">CSS (CSS3, SCSS, BEM)</li>
+          <li class="skills__item">JavaScript (ES6)</li>
+          <li class="skills__item">Git</li>
+          <li class="skills__item">NPM</li>
+          <li class="skills__item">Figma</li>
+          <li class="skills__item">Visual Studio Code</li>
+        </ul>
       </section>
-      <section class="page-main__code-example code-example">
-          <h2 class="code-example__title">Code Example</h2>
-          <pre class="code-example__code-wrapper">
-              <code class="code-example__code">
+      <section class="page-main__code-example code-example" id="code">
+        <h2 class="code-example__title">Code Example</h2>
+        <pre class="code-example__code-wrapper">
+              <code class="code-example__code javascript">
 function squareDigits(num) {
   const sum = String(num)
     .split('')
@@ -82,18 +91,86 @@ function evenOrOdd(number) {
             </pre>
       </section>
       <section class="page-main__education education" id="education">
-          <h2 class="education__title">Education</h2>
-          <ul class="education__list">
-            <li class="education__item">Volgograd State Technical University (some courses)</li>
-            <li class="education__item"><a href="https://ru.hexlet.io/" class="education__link">Hexlet</a></li>
-          </ul>
+        <h2 class="education__title">Education</h2>
+        <ul class="education__list">
+          <li class="education__item">Volgograd State Technical University (some courses)</li>
+          <li class="education__item"><a href="https://ru.hexlet.io/" class="education__link">Hexlet</a></li>
+        </ul>
       </section>
-      <section class="page-main__languages languages">
-          <h2 class="languages__title">Languages</h2>
-          <ul class="languages__list">
-            <li class="languages__item">Russian (native speaker)</li>
-            <li class="languages__item">English (A2)</li>
-          </ul>
+      <section class="page-main__projects projects" id="projects">
+        <h2 class="languages__title">Projects</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <h3 class="projects__title">Online-zoo</h3>
+            <div class="projects__techno techno">
+              <h4 class="techno__title"> Used technologies:</h4>
+              <p class="techno__descr">HTML, CSS, JS</p>
+            </div>
+            <figure class="projects__figure">
+              <a class="projects__link"
+                href="https://rolling-scopes-school.github.io/unbiz-JSFE2021Q1/online-zoo/pages/main/" target="_blank">
+                <img class="projects__img" src="./img/zoo.jpg" alt="online-zoo site screenshot">
+              </a>
+              <figcaption class="projects__descr">
+                This is an online zoo that gives you the opportunity to see pets in any of the zoos or in the wild,
+                where there are
+                cameras of constant broadcast.
+              </figcaption>
+            </figure>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__title">Wildlife</h3>
+            <div class="projects__techno techno">
+              <h4 class="techno__title"> Used technologies:</h4>
+              <p class="techno__descr">HTML, CSS</p>
+            </div>
+            <figure class="projects__figure">
+              <a class="projects__link" href="https://rolling-scopes-school.github.io/unbiz-JSFE2021Q1/wildlife/"
+                target="_blank">
+                <img class="projects__img" src="./img/wildlife.jpg" alt="Site about wild animal">
+              </a>
+              <figcaption class="projects__descr">
+                Landing page. Site about wild animals.
+              </figcaption>
+            </figure>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__title">Match-match game</h3>
+            <div class="projects__techno techno">
+              <h4 class="techno__title"> Used technologies:</h4>
+              <p class="techno__descr">HTML, CSS, JS</p>
+            </div>
+            <figure class="projects__figure">
+              <a class="projects__link"
+                href="https://rolling-scopes-school.github.io/unbiz-JSFE2021Q1/match-match-game/" target="_blank">
+                <img class="projects__img" src="./img/match.jpg" alt="Game">
+              </a>
+              <figcaption class="projects__descr">
+                The game is often used for memory training. The playing field consists of cards with different drawings
+                on the reverse
+                side. Before the start of the game session, the player is shown the location of all paired cards, after
+                30 seconds they
+                are hidden.
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__languages languages" id="languages">
+        <h2 class="languages__title">Languages</h2>
+        <ul class="languages__list">
+          <li class="languages__item">Russian (native speaker)</li>
+          <li class="languages__item">English (A2)</li>
+        </ul>
+      </section>
+      <section class="page-main__self-introduction self-introduction" id="introduction">
+        <h2 class="self-introduction__title">Self-introduction</h2>
+        <div class="self-introduction__video-wrapper">
+          <iframe class="self-introduction__video" src="https://www.youtube.com/embed/bl_xpjynfVQ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </section>
     </main>
 
@@ -103,7 +180,7 @@ function evenOrOdd(number) {
       </span>
       <span>
         <a href="https://rs.school/js/" class="page-footer__rs-school">
-          <img src="./img/rs_school_js.svg" alt="Ссылка на курс «JavaScript/Front-end»" height="26">
+          <img src="./img/rs_school_js.svg" alt="link to the course «JavaScript/Front-end»" height="26">
         </a>
       </span>
     </footer>
