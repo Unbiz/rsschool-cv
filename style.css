@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+h2 {
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
 .page-body {
   margin: 20px 20px;
   background-color: rgb(182, 182, 182);
@@ -153,6 +158,7 @@ html {
 
 .education__item {
   margin: 5px 0;
+  background-color: #fff;
 }
 
 .education__link {
@@ -164,8 +170,67 @@ html {
   opacity: 0.6;
 }
 
+.projects__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__item {
+  /* display: flex;
+  flex-wrap: wrap; */
+  max-width: 220px;
+  background-color: rgb(199, 199, 199);
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+}
+
+.projects__title {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.projects__link:hover .projects__img {
+  transform: scale(1.06);
+}
+
+.techno {
+  margin-right: 10px;
+}
+
+.techno__title {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
 .languages__item {
   margin: 5px 0;
+}
+
+.techno__descr {
+  margin-top: 0;
+}
+
+.projects__figure {
+  margin: 0;
+}
+
+.projects__img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.projects__descr {
 }
 
 .page-Footer {
