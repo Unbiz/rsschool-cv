@@ -257,6 +257,25 @@ h2 {
   opacity: 0.6;
 }
 
+.self-introduction__video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.self-introduction__video {
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
+
 @media (max-width: 760px) {
   .page-header__nav-button {
     display: block;
